@@ -14,7 +14,7 @@ import joblib
 import numpy as np
 
 # Load the machine learning model
-model = joblib.load('Ensemble.sav')
+model = joblib.load('Ensemble (3).sav')
 
 def main():
     st.title('Machine Learning Model Deployment')
