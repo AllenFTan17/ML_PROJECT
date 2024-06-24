@@ -4,13 +4,20 @@ import logging
 import os
 import sklearn
 
+# Specify the version used to save the model, if known
+required_sklearn_version = '1.2.2'  # replace with the actual version
+
 logging.basicConfig(level=logging.INFO)
 
 def load_model(file_path):
-    logging.info(f"Scikit-learn version: {sklearn.__version__}")
+    logging.info(f"Current scikit-learn version: {sklearn.__version__}")
+    if sklearn.__version__ != required_sklearn_version:
+        st.warning(f"Expected scikit-learn version {required_sklearn_version} but got {sklearn.__version__}")
+    
     if not os.path.exists(file_path):
         st.error(f"Model file not found: {file_path}")
         return None
+    
     try:
         with open(file_path, 'rb') as file:
             model = pickle.load(file)
@@ -26,7 +33,7 @@ def load_model(file_path):
 def main():
     st.title("Ensemble Model Inference with Streamlit")
     
-    model = load_model('Ensemble (1).sav')
+    model = load_model('Ensemble.sav')
     if model is None:
         return
     
