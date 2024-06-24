@@ -6,7 +6,7 @@ import sklearn
 
 # Specify the version used to save the model, if known
  # replace with the actual version
-required_sklearn_version = '1.5.0'
+required_sklearn_version = '1.2.2'
 logging.basicConfig(level=logging.INFO)
 
 def load_model(file_path):
