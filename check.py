@@ -5,7 +5,7 @@ import os
 import sklearn
 
 # Specify the version used to save the model, if known
-required_sklearn_version = '1.2.2'  # replace with the actual version
+ # replace with the actual version
 
 logging.basicConfig(level=logging.INFO)
 
