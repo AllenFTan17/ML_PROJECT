@@ -33,7 +33,7 @@ def load_model(file_path):
 def main():
     st.title("Ensemble Model Inference with Streamlit")
     
-    model = load_model('Ensemble.sav')
+    model = load_model('Ensemble (1).sav')
     if model is None:
         return
     
