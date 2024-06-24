@@ -14,7 +14,7 @@ import streamlit as st
 
 # loading the saved models
 
-ensemble_model = pickle.load(open('Ensemble.sav', 'rb'))
+ensemble_model = pickle.load(open('Ensemble (3).sav', 'rb'))
 
 
 # Diabetes Prediction Page
