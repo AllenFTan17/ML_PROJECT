@@ -32,9 +32,9 @@ def main():
     rain_6h = st.slider('rain_6h', min_value=0.0, max_value=100.0, value=0.1)
     rain_12h = st.slider('rain_12h', min_value=0.0, max_value=250.0, value=0.1)
     rain_24h = st.slider('rain_24h', min_value=0.0, max_value=200.0, value=0.1)
-    clouds_all= st.slider('clouds_all', min_value=0.0, max_value=100.0, value=1)
-    weather_main = st.slider('weather_main', min_value=0.0, max_value=3.0, value=1)
-    weather_description = st.slider('weather_description', min_value=0.0, max_value=14.0, value=1)
+    clouds_all= st.slider('clouds_all', min_value=0.0, max_value=100.0, value=0.1)
+    weather_main = st.slider('weather_main', min_value=0.0, max_value=3.0, value=0.1)
+    weather_description = st.slider('weather_description', min_value=0.0, max_value=14.0, value=0.1)
 
 
     if st.button('Make Prediction'):
