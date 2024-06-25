@@ -18,6 +18,7 @@ model = joblib.load('Ensemble (3).sav')
 
 def main():
     st.title('Machine Learning Model Deployment')
+    st.title('0 = Clear , 1 = Clouds, 2 = Rain, 3 = Thunderstorm')
 
     # Add user input components for 5 features
     temp = st.slider('temp', min_value=0.0, max_value=50.0, value=0.01)
